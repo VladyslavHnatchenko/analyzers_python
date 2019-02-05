@@ -1,0 +1,1777 @@
+Microsoft Windows [Version 10.0.17763.292]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\vladyslav.hnatchenko>cd PycharmProjects
+
+C:\Users\vladyslav.hnatchenko\PycharmProjects>cd d|_re
+'_re' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\vladyslav.hnatchenko\PycharmProjects>cd d_rest
+
+C:\Users\vladyslav.hnatchenko\PycharmProjects\d_rest>venv\Scripts\activate
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\d_rest>http http://127.0.0.1:8000/snippets/
+HTTP/1.1 200 OK
+Allow: GET, POST, HEAD, OPTIONS
+Content-Length: 700
+Content-Type: application/json
+Date: Tue, 05 Feb 2019 08:23:07 GMT
+Server: WSGIServer/0.2 CPython/3.7.1
+Vary: Accept, Cookie
+X-Frame-Options: SAMEORIGIN
+
+[
+    {
+        "code": "foo = \"bar\"\n",
+        "id": 1,
+        "language": "python",
+        "linenos": false,
+        "style": "friendly",
+        "title": ""
+    },
+    {
+        "code": "print \"hello, world\"\n",
+        "id": 2,
+        "language": "python",
+        "linenos": false,
+        "style": "friendly",
+        "title": ""
+    },
+    {
+        "code": "print \"hello, world\"",
+        "id": 3,
+        "language": "python",
+        "linenos": false,
+        "style": "friendly",
+        "title": ""
+    },
+    {
+        "code": "print123",
+        "id": 4,
+        "language": "python",
+        "linenos": false,
+        "style": "friendly",
+        "title": ""
+    },
+    {
+        "code": "print321",
+        "id": 5,
+        "language": "python",
+        "linenos": false,
+        "style": "friendly",
+        "title": ""
+    },
+    {
+        "code": "print 456",
+        "id": 6,
+        "language": "python",
+        "linenos": false,
+        "style": "friendly",
+        "title": ""
+    },
+    {
+        "code": "print Hello WorlD!",
+        "id": 7,
+        "language": "python",
+        "linenos": false,
+        "style": "friendly",
+        "title": ""
+    }
+]
+
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\d_rest>http http://127.0.0.1:8000/snippets/ Accept:application/json
+HTTP/1.1 200 OK
+Allow: GET, POST, HEAD, OPTIONS
+Content-Length: 700
+Content-Type: application/json
+Date: Tue, 05 Feb 2019 08:23:15 GMT
+Server: WSGIServer/0.2 CPython/3.7.1
+Vary: Accept, Cookie
+X-Frame-Options: SAMEORIGIN
+
+[
+    {
+        "code": "foo = \"bar\"\n",
+        "id": 1,
+        "language": "python",
+        "linenos": false,
+        "style": "friendly",
+        "title": ""
+    },
+    {
+        "code": "print \"hello, world\"\n",
+        "id": 2,
+        "language": "python",
+        "linenos": false,
+        "style": "friendly",
+        "title": ""
+    },
+    {
+        "code": "print \"hello, world\"",
+        "id": 3,
+        "language": "python",
+        "linenos": false,
+        "style": "friendly",
+        "title": ""
+    },
+    {
+        "code": "print123",
+        "id": 4,
+        "language": "python",
+        "linenos": false,
+        "style": "friendly",
+        "title": ""
+    },
+    {
+        "code": "print321",
+        "id": 5,
+        "language": "python",
+        "linenos": false,
+        "style": "friendly",
+        "title": ""
+    },
+    {
+        "code": "print 456",
+        "id": 6,
+        "language": "python",
+        "linenos": false,
+        "style": "friendly",
+        "title": ""
+    },
+    {
+        "code": "print Hello WorlD!",
+        "id": 7,
+        "language": "python",
+        "linenos": false,
+        "style": "friendly",
+        "title": ""
+    }
+]
+
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\d_rest>http http://127.0.0.1:8000/snippets/ Accept:text/html
+HTTP/1.1 200 OK
+Allow: GET, POST, HEAD, OPTIONS
+Content-Length: 13091
+Content-Type: text/html; charset=utf-8
+Date: Tue, 05 Feb 2019 08:23:21 GMT
+Server: WSGIServer/0.2 CPython/3.7.1
+Vary: Accept, Cookie
+X-Frame-Options: SAMEORIGIN
+
+<!DOCTYPE html>
+<html>
+  <head>
+
+
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="robots" content="NONE,NOARCHIVE" />
+
+
+      <title>Snippet List – Django REST framework</title>
+
+
+
+          <link rel="stylesheet" type="text/css" href="/static/rest_framework/css/bootstrap.min.css"/>
+          <link rel="stylesheet" type="text/css" href="/static/rest_framework/css/bootstrap-tweaks.css"/>
+
+
+        <link rel="stylesheet" type="text/css" href="/static/rest_framework/css/prettify.css"/>
+        <link rel="stylesheet" type="text/css" href="/static/rest_framework/css/default.css"/>
+        <style>.highlight .hll { background-color: #ffffcc }
+.highlight  { background: #f8f8f8; }
+.highlight .c { color: #008800; font-style: italic } /* Comment */
+.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .k { color: #AA22FF; font-weight: bold } /* Keyword */
+.highlight .o { color: #666666 } /* Operator */
+.highlight .ch { color: #008800; font-style: italic } /* Comment.Hashbang */
+.highlight .cm { color: #008800; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #008800 } /* Comment.Preproc */
+.highlight .cpf { color: #008800; font-style: italic } /* Comment.PreprocFile */
+.highlight .c1 { color: #008800; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #008800; font-weight: bold } /* Comment.Special */
+.highlight .gd { color: #A00000 } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight .gi { color: #00A000 } /* Generic.Inserted */
+.highlight .go { color: #888888 } /* Generic.Output */
+.highlight .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight .gt { color: #0044DD } /* Generic.Traceback */
+.highlight .kc { color: #AA22FF; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #AA22FF; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #AA22FF; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #AA22FF } /* Keyword.Pseudo */
+.highlight .kr { color: #AA22FF; font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #00BB00; font-weight: bold } /* Keyword.Type */
+.highlight .m { color: #666666 } /* Literal.Number */
+.highlight .s { color: #BB4444 } /* Literal.String */
+.highlight .na { color: #BB4444 } /* Name.Attribute */
+.highlight .nb { color: #AA22FF } /* Name.Builtin */
+.highlight .nc { color: #0000FF } /* Name.Class */
+.highlight .no { color: #880000 } /* Name.Constant */
+.highlight .nd { color: #AA22FF } /* Name.Decorator */
+.highlight .ni { color: #999999; font-weight: bold } /* Name.Entity */
+.highlight .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #00A000 } /* Name.Function */
+.highlight .nl { color: #A0A000 } /* Name.Label */
+.highlight .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.highlight .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.highlight .nv { color: #B8860B } /* Name.Variable */
+.highlight .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mb { color: #666666 } /* Literal.Number.Bin */
+.highlight .mf { color: #666666 } /* Literal.Number.Float */
+.highlight .mh { color: #666666 } /* Literal.Number.Hex */
+.highlight .mi { color: #666666 } /* Literal.Number.Integer */
+.highlight .mo { color: #666666 } /* Literal.Number.Oct */
+.highlight .sa { color: #BB4444 } /* Literal.String.Affix */
+.highlight .sb { color: #BB4444 } /* Literal.String.Backtick */
+.highlight .sc { color: #BB4444 } /* Literal.String.Char */
+.highlight .dl { color: #BB4444 } /* Literal.String.Delimiter */
+.highlight .sd { color: #BB4444; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: #BB4444 } /* Literal.String.Double */
+.highlight .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+.highlight .sh { color: #BB4444 } /* Literal.String.Heredoc */
+.highlight .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.highlight .sx { color: #008000 } /* Literal.String.Other */
+.highlight .sr { color: #BB6688 } /* Literal.String.Regex */
+.highlight .s1 { color: #BB4444 } /* Literal.String.Single */
+.highlight .ss { color: #B8860B } /* Literal.String.Symbol */
+.highlight .bp { color: #AA22FF } /* Name.Builtin.Pseudo */
+.highlight .fm { color: #00A000 } /* Name.Function.Magic */
+.highlight .vc { color: #B8860B } /* Name.Variable.Class */
+.highlight .vg { color: #B8860B } /* Name.Variable.Global */
+.highlight .vi { color: #B8860B } /* Name.Variable.Instance */
+.highlight .vm { color: #B8860B } /* Name.Variable.Magic */
+.highlight .il { color: #666666 } /* Literal.Number.Integer.Long */</style>
+
+
+
+  </head>
+
+
+  <body class="">
+
+    <div class="wrapper">
+
+        <div class="navbar navbar-static-top navbar-inverse"
+             role="navigation" aria-label="navbar">
+          <div class="container">
+            <span>
+
+                <a class='navbar-brand' rel="nofollow" href='https://www.django-rest-framework.org/'>
+                    Django REST framework
+                </a>
+
+            </span>
+            <ul class="nav navbar-nav pull-right">
+
+
+
+
+
+            </ul>
+          </div>
+        </div>
+
+
+      <div class="container">
+
+          <ul class="breadcrumb">
+
+
+                <li class="active"><a href="/snippets/">Snippet List</a></li>
+
+
+          </ul>
+
+
+        <!-- Content -->
+        <div id="content" role="main" aria-label="content">
+
+
+          <div class="region"  aria-label="request form">
+
+            <form id="get-form" class="pull-right">
+              <fieldset>
+
+                  <div class="btn-group format-selection">
+                    <a class="btn btn-primary js-tooltip" href="/snippets/" rel="nofollow" title="Make a GET request on the Snippet List resource">GET</a>
+
+                    <button class="btn btn-primary dropdown-toggle js-tooltip" data-toggle="dropdown" title="Specify a format for the GET request">
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+
+                        <li>
+                          <a class="js-tooltip format-option" href="/snippets/?format=json" rel="nofollow" title="Make a GET request on the Snippet List resource with the format set to `json`">json</a>
+                        </li>
+
+                        <li>
+                          <a class="js-tooltip format-option" href="/snippets/?format=api" rel="nofollow" title="Make a GET request on the Snippet List resource with the format set to `api`">api</a>
+                        </li>
+
+                    </ul>
+                  </div>
+
+              </fieldset>
+            </form>
+
+
+
+            <form class="button-form" action="/snippets/" data-method="OPTIONS">
+              <button class="btn btn-primary js-tooltip" title="Make an OPTIONS request on the Snippet List resource">OPTIONS</button>
+            </form>
+
+
+
+
+
+
+
+          </div>
+
+            <div class="content-main" role="main"  aria-label="main content">
+              <div class="page-header">
+                <h1>Snippet List</h1>
+              </div>
+              <div style="float:left">
+
+                  <p>List all snippets, or create a new snippet.</p>
+
+              </div>
+
+
+
+              <div class="request-info" style="clear: both" aria-label="request info">
+                <pre class="prettyprint"><b>GET</b> /snippets/</pre>
+              </div>
+
+              <div class="response-info" aria-label="response info">
+                <pre class="prettyprint"><span class="meta nocode"><b>HTTP 200 OK</b>
+<b>Allow:</b> <span class="lit">GET, POST, HEAD, OPTIONS</span>
+<b>Content-Type:</b> <span class="lit">application/json</span>
+<b>Vary:</b> <span class="lit">Accept</span>
+
+</span>[
+    {
+        &quot;id&quot;: 1,
+        &quot;title&quot;: &quot;&quot;,
+        &quot;code&quot;: &quot;foo = \&quot;bar\&quot;\n&quot;,
+        &quot;linenos&quot;: false,
+        &quot;language&quot;: &quot;python&quot;,
+        &quot;style&quot;: &quot;friendly&quot;
+    },
+    {
+        &quot;id&quot;: 2,
+        &quot;title&quot;: &quot;&quot;,
+        &quot;code&quot;: &quot;print \&quot;hello, world\&quot;\n&quot;,
+        &quot;linenos&quot;: false,
+        &quot;language&quot;: &quot;python&quot;,
+        &quot;style&quot;: &quot;friendly&quot;
+    },
+    {
+        &quot;id&quot;: 3,
+        &quot;title&quot;: &quot;&quot;,
+        &quot;code&quot;: &quot;print \&quot;hello, world\&quot;&quot;,
+        &quot;linenos&quot;: false,
+        &quot;language&quot;: &quot;python&quot;,
+        &quot;style&quot;: &quot;friendly&quot;
+    },
+    {
+        &quot;id&quot;: 4,
+        &quot;title&quot;: &quot;&quot;,
+        &quot;code&quot;: &quot;print123&quot;,
+        &quot;linenos&quot;: false,
+        &quot;language&quot;: &quot;python&quot;,
+        &quot;style&quot;: &quot;friendly&quot;
+    },
+    {
+        &quot;id&quot;: 5,
+        &quot;title&quot;: &quot;&quot;,
+        &quot;code&quot;: &quot;print321&quot;,
+        &quot;linenos&quot;: false,
+        &quot;language&quot;: &quot;python&quot;,
+        &quot;style&quot;: &quot;friendly&quot;
+    },
+    {
+        &quot;id&quot;: 6,
+        &quot;title&quot;: &quot;&quot;,
+        &quot;code&quot;: &quot;print 456&quot;,
+        &quot;linenos&quot;: false,
+        &quot;language&quot;: &quot;python&quot;,
+        &quot;style&quot;: &quot;friendly&quot;
+    },
+    {
+        &quot;id&quot;: 7,
+        &quot;title&quot;: &quot;&quot;,
+        &quot;code&quot;: &quot;print Hello WorlD!&quot;,
+        &quot;linenos&quot;: false,
+        &quot;language&quot;: &quot;python&quot;,
+        &quot;style&quot;: &quot;friendly&quot;
+    }
+]</pre>
+              </div>
+            </div>
+
+
+
+                <div >
+
+
+                  <div class="well tab-content">
+
+
+                    <div  id="post-generic-content-form">
+
+                        <form action="/snippets/" method="POST" class="form-horizontal">
+                          <fieldset>
+
+
+
+  <div class="form-group">
+    <label for="id__content_type" class="col-sm-2 control-label">Media type:</label>
+    <div class="col-sm-10">
+      <select name="_content_type" data-override="content-type" id="id__content_type" class="form-control">
+  <option value="application/json" selected>application/json</option>
+
+  <option value="application/x-www-form-urlencoded">application/x-www-form-urlencoded</option>
+
+  <option value="multipart/form-data">multipart/form-data</option>
+
+</select>
+      <span class="help-block"></span>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="id__content" class="col-sm-2 control-label">Content:</label>
+    <div class="col-sm-10">
+      <textarea name="_content" cols="40" rows="10" data-override="content" id="id__content" class="form-control">
+</textarea>
+      <span class="help-block"></span>
+    </div>
+  </div>
+
+
+                            <div class="form-actions">
+                              <button class="btn btn-primary js-tooltip" title="Make a POST request on the Snippet List resource">POST</button>
+                            </div>
+                          </fieldset>
+                        </form>
+
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+        </div><!-- /.content -->
+      </div><!-- /.container -->
+    </div><!-- ./wrapper -->
+
+
+
+
+      <script>
+        window.drf = {
+          csrfHeaderName: "X-CSRFTOKEN",
+          csrfCookieName: "csrftoken"
+        };
+      </script>
+      <script src="/static/rest_framework/js/jquery-3.3.1.min.js"></script>
+      <script src="/static/rest_framework/js/ajax-form.js"></script>
+      <script src="/static/rest_framework/js/csrf.js"></script>
+      <script src="/static/rest_framework/js/bootstrap.min.js"></script>
+      <script src="/static/rest_framework/js/prettify-min.js"></script>
+      <script src="/static/rest_framework/js/default.js"></script>
+      <script>
+        $(document).ready(function() {
+          $('form').ajaxForm();
+        });
+      </script>
+
+
+  </body>
+
+</html>
+
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\d_rest>http http://127.0.0.1:8000/snippets.api
+HTTP/1.1 200 OK
+Allow: GET, POST, HEAD, OPTIONS
+Content-Length: 13112
+Content-Type: text/html; charset=utf-8
+Date: Tue, 05 Feb 2019 08:23:27 GMT
+Server: WSGIServer/0.2 CPython/3.7.1
+Vary: Accept, Cookie
+X-Frame-Options: SAMEORIGIN
+
+<!DOCTYPE html>
+<html>
+  <head>
+
+
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="robots" content="NONE,NOARCHIVE" />
+
+
+      <title>Snippet List – Django REST framework</title>
+
+
+
+          <link rel="stylesheet" type="text/css" href="/static/rest_framework/css/bootstrap.min.css"/>
+          <link rel="stylesheet" type="text/css" href="/static/rest_framework/css/bootstrap-tweaks.css"/>
+
+
+        <link rel="stylesheet" type="text/css" href="/static/rest_framework/css/prettify.css"/>
+        <link rel="stylesheet" type="text/css" href="/static/rest_framework/css/default.css"/>
+        <style>.highlight .hll { background-color: #ffffcc }
+.highlight  { background: #f8f8f8; }
+.highlight .c { color: #008800; font-style: italic } /* Comment */
+.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .k { color: #AA22FF; font-weight: bold } /* Keyword */
+.highlight .o { color: #666666 } /* Operator */
+.highlight .ch { color: #008800; font-style: italic } /* Comment.Hashbang */
+.highlight .cm { color: #008800; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #008800 } /* Comment.Preproc */
+.highlight .cpf { color: #008800; font-style: italic } /* Comment.PreprocFile */
+.highlight .c1 { color: #008800; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #008800; font-weight: bold } /* Comment.Special */
+.highlight .gd { color: #A00000 } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight .gi { color: #00A000 } /* Generic.Inserted */
+.highlight .go { color: #888888 } /* Generic.Output */
+.highlight .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight .gt { color: #0044DD } /* Generic.Traceback */
+.highlight .kc { color: #AA22FF; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #AA22FF; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #AA22FF; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #AA22FF } /* Keyword.Pseudo */
+.highlight .kr { color: #AA22FF; font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #00BB00; font-weight: bold } /* Keyword.Type */
+.highlight .m { color: #666666 } /* Literal.Number */
+.highlight .s { color: #BB4444 } /* Literal.String */
+.highlight .na { color: #BB4444 } /* Name.Attribute */
+.highlight .nb { color: #AA22FF } /* Name.Builtin */
+.highlight .nc { color: #0000FF } /* Name.Class */
+.highlight .no { color: #880000 } /* Name.Constant */
+.highlight .nd { color: #AA22FF } /* Name.Decorator */
+.highlight .ni { color: #999999; font-weight: bold } /* Name.Entity */
+.highlight .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #00A000 } /* Name.Function */
+.highlight .nl { color: #A0A000 } /* Name.Label */
+.highlight .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.highlight .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.highlight .nv { color: #B8860B } /* Name.Variable */
+.highlight .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mb { color: #666666 } /* Literal.Number.Bin */
+.highlight .mf { color: #666666 } /* Literal.Number.Float */
+.highlight .mh { color: #666666 } /* Literal.Number.Hex */
+.highlight .mi { color: #666666 } /* Literal.Number.Integer */
+.highlight .mo { color: #666666 } /* Literal.Number.Oct */
+.highlight .sa { color: #BB4444 } /* Literal.String.Affix */
+.highlight .sb { color: #BB4444 } /* Literal.String.Backtick */
+.highlight .sc { color: #BB4444 } /* Literal.String.Char */
+.highlight .dl { color: #BB4444 } /* Literal.String.Delimiter */
+.highlight .sd { color: #BB4444; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: #BB4444 } /* Literal.String.Double */
+.highlight .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+.highlight .sh { color: #BB4444 } /* Literal.String.Heredoc */
+.highlight .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.highlight .sx { color: #008000 } /* Literal.String.Other */
+.highlight .sr { color: #BB6688 } /* Literal.String.Regex */
+.highlight .s1 { color: #BB4444 } /* Literal.String.Single */
+.highlight .ss { color: #B8860B } /* Literal.String.Symbol */
+.highlight .bp { color: #AA22FF } /* Name.Builtin.Pseudo */
+.highlight .fm { color: #00A000 } /* Name.Function.Magic */
+.highlight .vc { color: #B8860B } /* Name.Variable.Class */
+.highlight .vg { color: #B8860B } /* Name.Variable.Global */
+.highlight .vi { color: #B8860B } /* Name.Variable.Instance */
+.highlight .vm { color: #B8860B } /* Name.Variable.Magic */
+.highlight .il { color: #666666 } /* Literal.Number.Integer.Long */</style>
+
+
+
+  </head>
+
+
+  <body class="">
+
+    <div class="wrapper">
+
+        <div class="navbar navbar-static-top navbar-inverse"
+             role="navigation" aria-label="navbar">
+          <div class="container">
+            <span>
+
+                <a class='navbar-brand' rel="nofollow" href='https://www.django-rest-framework.org/'>
+                    Django REST framework
+                </a>
+
+            </span>
+            <ul class="nav navbar-nav pull-right">
+
+
+
+
+
+            </ul>
+          </div>
+        </div>
+
+
+      <div class="container">
+
+          <ul class="breadcrumb">
+
+
+                <li class="active"><a href="/snippets.api">Snippet List</a></li>
+
+
+          </ul>
+
+
+        <!-- Content -->
+        <div id="content" role="main" aria-label="content">
+
+
+          <div class="region"  aria-label="request form">
+
+            <form id="get-form" class="pull-right">
+              <fieldset>
+
+                  <div class="btn-group format-selection">
+                    <a class="btn btn-primary js-tooltip" href="/snippets.api" rel="nofollow" title="Make a GET request on the Snippet List resource">GET</a>
+
+                    <button class="btn btn-primary dropdown-toggle js-tooltip" data-toggle="dropdown" title="Specify a format for the GET request">
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+
+                        <li>
+                          <a class="js-tooltip format-option" href="/snippets.api?format=json" rel="nofollow" title="Make a GET request on the Snippet List resource with the format set to `json`">json</a>
+                        </li>
+
+                        <li>
+                          <a class="js-tooltip format-option" href="/snippets.api?format=api" rel="nofollow" title="Make a GET request on the Snippet List resource with the format set to `api`">api</a>
+                        </li>
+
+                    </ul>
+                  </div>
+
+              </fieldset>
+            </form>
+
+
+
+            <form class="button-form" action="/snippets.api" data-method="OPTIONS">
+              <button class="btn btn-primary js-tooltip" title="Make an OPTIONS request on the Snippet List resource">OPTIONS</button>
+            </form>
+
+
+
+
+
+
+
+          </div>
+
+            <div class="content-main" role="main"  aria-label="main content">
+              <div class="page-header">
+                <h1>Snippet List</h1>
+              </div>
+              <div style="float:left">
+
+                  <p>List all snippets, or create a new snippet.</p>
+
+              </div>
+
+
+
+              <div class="request-info" style="clear: both" aria-label="request info">
+                <pre class="prettyprint"><b>GET</b> /snippets.api</pre>
+              </div>
+
+              <div class="response-info" aria-label="response info">
+                <pre class="prettyprint"><span class="meta nocode"><b>HTTP 200 OK</b>
+<b>Allow:</b> <span class="lit">GET, POST, HEAD, OPTIONS</span>
+<b>Content-Type:</b> <span class="lit">application/json</span>
+<b>Vary:</b> <span class="lit">Accept</span>
+
+</span>[
+    {
+        &quot;id&quot;: 1,
+        &quot;title&quot;: &quot;&quot;,
+        &quot;code&quot;: &quot;foo = \&quot;bar\&quot;\n&quot;,
+        &quot;linenos&quot;: false,
+        &quot;language&quot;: &quot;python&quot;,
+        &quot;style&quot;: &quot;friendly&quot;
+    },
+    {
+        &quot;id&quot;: 2,
+        &quot;title&quot;: &quot;&quot;,
+        &quot;code&quot;: &quot;print \&quot;hello, world\&quot;\n&quot;,
+        &quot;linenos&quot;: false,
+        &quot;language&quot;: &quot;python&quot;,
+        &quot;style&quot;: &quot;friendly&quot;
+    },
+    {
+        &quot;id&quot;: 3,
+        &quot;title&quot;: &quot;&quot;,
+        &quot;code&quot;: &quot;print \&quot;hello, world\&quot;&quot;,
+        &quot;linenos&quot;: false,
+        &quot;language&quot;: &quot;python&quot;,
+        &quot;style&quot;: &quot;friendly&quot;
+    },
+    {
+        &quot;id&quot;: 4,
+        &quot;title&quot;: &quot;&quot;,
+        &quot;code&quot;: &quot;print123&quot;,
+        &quot;linenos&quot;: false,
+        &quot;language&quot;: &quot;python&quot;,
+        &quot;style&quot;: &quot;friendly&quot;
+    },
+    {
+        &quot;id&quot;: 5,
+        &quot;title&quot;: &quot;&quot;,
+        &quot;code&quot;: &quot;print321&quot;,
+        &quot;linenos&quot;: false,
+        &quot;language&quot;: &quot;python&quot;,
+        &quot;style&quot;: &quot;friendly&quot;
+    },
+    {
+        &quot;id&quot;: 6,
+        &quot;title&quot;: &quot;&quot;,
+        &quot;code&quot;: &quot;print 456&quot;,
+        &quot;linenos&quot;: false,
+        &quot;language&quot;: &quot;python&quot;,
+        &quot;style&quot;: &quot;friendly&quot;
+    },
+    {
+        &quot;id&quot;: 7,
+        &quot;title&quot;: &quot;&quot;,
+        &quot;code&quot;: &quot;print Hello WorlD!&quot;,
+        &quot;linenos&quot;: false,
+        &quot;language&quot;: &quot;python&quot;,
+        &quot;style&quot;: &quot;friendly&quot;
+    }
+]</pre>
+              </div>
+            </div>
+
+
+
+                <div >
+
+
+                  <div class="well tab-content">
+
+
+                    <div  id="post-generic-content-form">
+
+                        <form action="/snippets.api" method="POST" class="form-horizontal">
+                          <fieldset>
+
+
+
+  <div class="form-group">
+    <label for="id__content_type" class="col-sm-2 control-label">Media type:</label>
+    <div class="col-sm-10">
+      <select name="_content_type" data-override="content-type" id="id__content_type" class="form-control">
+  <option value="application/json" selected>application/json</option>
+
+  <option value="application/x-www-form-urlencoded">application/x-www-form-urlencoded</option>
+
+  <option value="multipart/form-data">multipart/form-data</option>
+
+</select>
+      <span class="help-block"></span>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="id__content" class="col-sm-2 control-label">Content:</label>
+    <div class="col-sm-10">
+      <textarea name="_content" cols="40" rows="10" data-override="content" id="id__content" class="form-control">
+</textarea>
+      <span class="help-block"></span>
+    </div>
+  </div>
+
+
+                            <div class="form-actions">
+                              <button class="btn btn-primary js-tooltip" title="Make a POST request on the Snippet List resource">POST</button>
+                            </div>
+                          </fieldset>
+                        </form>
+
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+        </div><!-- /.content -->
+      </div><!-- /.container -->
+    </div><!-- ./wrapper -->
+
+
+
+
+      <script>
+        window.drf = {
+          csrfHeaderName: "X-CSRFTOKEN",
+          csrfCookieName: "csrftoken"
+        };
+      </script>
+      <script src="/static/rest_framework/js/jquery-3.3.1.min.js"></script>
+      <script src="/static/rest_framework/js/ajax-form.js"></script>
+      <script src="/static/rest_framework/js/csrf.js"></script>
+      <script src="/static/rest_framework/js/bootstrap.min.js"></script>
+      <script src="/static/rest_framework/js/prettify-min.js"></script>
+      <script src="/static/rest_framework/js/default.js"></script>
+      <script>
+        $(document).ready(function() {
+          $('form').ajaxForm();
+        });
+      </script>
+
+
+  </body>
+
+</html>
+
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\d_rest>http http://127.0.0.1:8000/snippets.json
+HTTP/1.1 200 OK
+Allow: GET, POST, HEAD, OPTIONS
+Content-Length: 700
+Content-Type: application/json
+Date: Tue, 05 Feb 2019 08:23:34 GMT
+Server: WSGIServer/0.2 CPython/3.7.1
+Vary: Accept, Cookie
+X-Frame-Options: SAMEORIGIN
+
+[
+    {
+        "code": "foo = \"bar\"\n",
+        "id": 1,
+        "language": "python",
+        "linenos": false,
+        "style": "friendly",
+        "title": ""
+    },
+    {
+        "code": "print \"hello, world\"\n",
+        "id": 2,
+        "language": "python",
+        "linenos": false,
+        "style": "friendly",
+        "title": ""
+    },
+    {
+        "code": "print \"hello, world\"",
+        "id": 3,
+        "language": "python",
+        "linenos": false,
+        "style": "friendly",
+        "title": ""
+    },
+    {
+        "code": "print123",
+        "id": 4,
+        "language": "python",
+        "linenos": false,
+        "style": "friendly",
+        "title": ""
+    },
+    {
+        "code": "print321",
+        "id": 5,
+        "language": "python",
+        "linenos": false,
+        "style": "friendly",
+        "title": ""
+    },
+    {
+        "code": "print 456",
+        "id": 6,
+        "language": "python",
+        "linenos": false,
+        "style": "friendly",
+        "title": ""
+    },
+    {
+        "code": "print Hello WorlD!",
+        "id": 7,
+        "language": "python",
+        "linenos": false,
+        "style": "friendly",
+        "title": ""
+    }
+]
+
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\d_rest>http --form POST http://127.0.0.1:8000/snippets/ code="GIT Fix"
+HTTP/1.1 201 Created
+Allow: GET, POST, HEAD, OPTIONS
+Content-Length: 91
+Content-Type: application/json
+Date: Tue, 05 Feb 2019 08:24:07 GMT
+Server: WSGIServer/0.2 CPython/3.7.1
+Vary: Accept, Cookie
+X-Frame-Options: SAMEORIGIN
+
+{
+    "code": "GIT Fix",
+    "id": 8,
+    "language": "python",
+    "linenos": false,
+    "style": "friendly",
+    "title": ""
+}
+
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\d_rest>http http://127.0.0.1:8000/snippets.json
+HTTP/1.1 200 OK
+Allow: GET, POST, HEAD, OPTIONS
+Content-Length: 792
+Content-Type: application/json
+Date: Tue, 05 Feb 2019 08:36:06 GMT
+Server: WSGIServer/0.2 CPython/3.7.1
+Vary: Accept, Cookie
+X-Frame-Options: SAMEORIGIN
+
+[
+    {
+        "code": "foo = \"bar\"\n",
+        "id": 1,
+        "language": "python",
+        "linenos": false,
+        "style": "friendly",
+        "title": ""
+    },
+    {
+        "code": "print \"hello, world\"\n",
+        "id": 2,
+        "language": "python",
+        "linenos": false,
+        "style": "friendly",
+        "title": ""
+    },
+    {
+        "code": "print \"hello, world\"",
+        "id": 3,
+        "language": "python",
+        "linenos": false,
+        "style": "friendly",
+        "title": ""
+    },
+    {
+        "code": "print123",
+        "id": 4,
+        "language": "python",
+        "linenos": false,
+        "style": "friendly",
+        "title": ""
+    },
+    {
+        "code": "print321",
+        "id": 5,
+        "language": "python",
+        "linenos": false,
+        "style": "friendly",
+        "title": ""
+    },
+    {
+        "code": "print 456",
+        "id": 6,
+        "language": "python",
+        "linenos": false,
+        "style": "friendly",
+        "title": ""
+    },
+    {
+        "code": "print Hello WorlD!",
+        "id": 7,
+        "language": "python",
+        "linenos": false,
+        "style": "friendly",
+        "title": ""
+    },
+    {
+        "code": "GIT Fix",
+        "id": 8,
+        "language": "python",
+        "linenos": false,
+        "style": "friendly",
+        "title": ""
+    }
+]
+
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\d_rest>http http://127.0.0.1:8000/snippets/
+HTTP/1.1 200 OK
+Allow: GET, POST, HEAD, OPTIONS
+Content-Length: 792
+Content-Type: application/json
+Date: Tue, 05 Feb 2019 09:01:33 GMT
+Server: WSGIServer/0.2 CPython/3.7.1
+Vary: Accept, Cookie
+X-Frame-Options: SAMEORIGIN
+
+[
+    {
+        "code": "foo = \"bar\"\n",
+        "id": 1,
+        "language": "python",
+        "linenos": false,
+        "style": "friendly",
+        "title": ""
+    },
+    {
+        "code": "print \"hello, world\"\n",
+        "id": 2,
+        "language": "python",
+        "linenos": false,
+        "style": "friendly",
+        "title": ""
+    },
+    {
+        "code": "print \"hello, world\"",
+        "id": 3,
+        "language": "python",
+        "linenos": false,
+        "style": "friendly",
+        "title": ""
+    },
+    {
+        "code": "print123",
+        "id": 4,
+        "language": "python",
+        "linenos": false,
+        "style": "friendly",
+        "title": ""
+    },
+    {
+        "code": "print321",
+        "id": 5,
+        "language": "python",
+        "linenos": false,
+        "style": "friendly",
+        "title": ""
+    },
+    {
+        "code": "print 456",
+        "id": 6,
+        "language": "python",
+        "linenos": false,
+        "style": "friendly",
+        "title": ""
+    },
+    {
+        "code": "print Hello WorlD!",
+        "id": 7,
+        "language": "python",
+        "linenos": false,
+        "style": "friendly",
+        "title": ""
+    },
+    {
+        "code": "GIT Fix",
+        "id": 8,
+        "language": "python",
+        "linenos": false,
+        "style": "friendly",
+        "title": ""
+    }
+]
+
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\d_rest>venv\Scripts\deactivate
+C:\Users\vladyslav.hnatchenko\PycharmProjects\d_rest>cd ..
+
+C:\Users\vladyslav.hnatchenko\PycharmProjects>cd analyzers_python
+
+C:\Users\vladyslav.hnatchenko\PycharmProjects\analyzers_python>python -m venv venv
+
+C:\Users\vladyslav.hnatchenko\PycharmProjects\analyzers_python>venv\Scripts\activate
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\analyzers_python>pip install pylint
+Collecting pylint
+  Using cached https://files.pythonhosted.org/packages/a5/06/ecef826f319055e6b231716730d7f9047dd7524ffda224b521d989f085b6/pylint-2.2.2-py3-none-any.whl
+Collecting mccabe (from pylint)
+  Using cached https://files.pythonhosted.org/packages/87/89/479dc97e18549e21354893e4ee4ef36db1d237534982482c3681ee6e7b57/mccabe-0.6.1-py2.py3-none-any.whl
+Collecting astroid>=2.0.0 (from pylint)
+  Using cached https://files.pythonhosted.org/packages/fc/53/8809bc008bad0300897281a7b320b286dc0e84e836396c0cff6279841e8a/astroid-2.1.0-py3-none-any.whl
+Collecting isort>=4.2.5 (from pylint)
+  Using cached https://files.pythonhosted.org/packages/1f/2c/22eee714d7199ae0464beda6ad5fedec8fee6a2f7ffd1e8f1840928fe318/isort-4.3.4-py3-none-any.whl
+Collecting colorama; sys_platform == "win32" (from pylint)
+  Using cached https://files.pythonhosted.org/packages/4f/a6/728666f39bfff1719fc94c481890b2106837da9318031f71a8424b662e12/colorama-0.4.1-py2.py3-none-any.whl
+Collecting six (from astroid>=2.0.0->pylint)
+  Using cached https://files.pythonhosted.org/packages/73/fb/00a976f728d0d1fecfe898238ce23f502a721c0ac0ecfedb80e0d88c64e9/six-1.12.0-py2.py3-none-any.whl
+Collecting lazy-object-proxy (from astroid>=2.0.0->pylint)
+  Using cached https://files.pythonhosted.org/packages/55/08/23c0753599bdec1aec273e322f277c4e875150325f565017f6280549f554/lazy-object-proxy-1.3.1.tar.gz
+Collecting wrapt (from astroid>=2.0.0->pylint)
+  Downloading https://files.pythonhosted.org/packages/67/b2/0f71ca90b0ade7fad27e3d20327c996c6252a2ffe88f50a95bba7434eda9/wrapt-1.11.1.tar.gz
+Installing collected packages: mccabe, six, lazy-object-proxy, wrapt, astroid, isort, colorama, pylint
+  Running setup.py install for lazy-object-proxy ... done
+  Running setup.py install for wrapt ... done
+Successfully installed astroid-2.1.0 colorama-0.4.1 isort-4.3.4 lazy-object-proxy-1.3.1 mccabe-0.6.1 pylint-2.2.2 six-1.12.0 wrapt-1.11.1
+You are using pip version 10.0.1, however version 19.0.1 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\analyzers_python>python -m pip install --upgrade pip
+Collecting pip
+  Using cached https://files.pythonhosted.org/packages/46/dc/7fd5df840efb3e56c8b4f768793a237ec4ee59891959d6a215d63f727023/pip-19.0.1-py2.py3-none-any.whl
+Installing collected packages: pip
+  Found existing installation: pip 10.0.1
+    Uninstalling pip-10.0.1:
+      Successfully uninstalled pip-10.0.1
+Successfully installed pip-19.0.1
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\analyzers_python>pip list
+Package           Version
+----------------- -------
+astroid           2.1.0
+colorama          0.4.1
+isort             4.3.4
+lazy-object-proxy 1.3.1
+mccabe            0.6.1
+pip               19.0.1
+pylint            2.2.2
+setuptools        39.0.1
+six               1.12.0
+wrapt             1.11.1
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\analyzers_python>pylint
+Usage:  pylint [options] modules_or_packages
+
+  Check that module(s) satisfy a coding standard (and more !).
+
+    pylint --help
+
+  Display this help message and exit.
+
+    pylint --help-msg <msg-id>[,<msg-id>]
+
+  Display help messages about given message identifiers and exit.
+
+
+Options:
+  --version             show program's version number and exit
+  -h, --help            show this help message and exit
+  --long-help           more verbose help.
+
+  Master:
+    --rcfile=<file>     Specify a configuration file.
+    --init-hook=<code>  Python code to execute, usually for sys.path
+                        manipulation such as pygtk.require().
+    -E, --errors-only   In error mode, checkers without error messages are
+                        disabled and for others, only the ERROR messages are
+                        displayed, and no reports are done by default.
+    --py3k              In Python 3 porting mode, all checkers will be
+                        disabled and only messages emitted by the porting
+                        checker will be displayed.
+    -v, --verbose       In verbose mode, extra non-checker-related info will
+                        be displayed.
+    --ignore=<file>[,<file>...]
+                        Add files or directories to the blacklist. They should
+                        be base names, not paths. [current: CVS]
+    --ignore-patterns=<pattern>[,<pattern>...]
+                        Add files or directories matching the regex patterns
+                        to the blacklist. The regex matches against base
+                        names, not paths. [current: none]
+    --persistent=<y_or_n>
+                        Pickle collected data for later comparisons. [current:
+                        yes]
+    --load-plugins=<modules>
+                        List of plugins (as comma separated values of python
+                        modules names) to load, usually to register additional
+                        checkers. [current: none]
+    -j <n-processes>, --jobs=<n-processes>
+                        Use multiple processes to speed up Pylint. Specifying
+                        0 will auto-detect the number of processors available
+                        to use. [current: 1]
+    --limit-inference-results=<number-of-results>
+                        Control the amount of potential inferred values when
+                        inferring a single object. This can help the
+                        performance when dealing with large functions or
+                        complex, nested conditions.  [current: 100]
+    --extension-pkg-whitelist=<pkg[,pkg]>
+                        A comma-separated list of package or module names from
+                        where C extensions may be loaded. Extensions are
+                        loading into the active Python interpreter and may run
+                        arbitrary code. [current: none]
+    --suggestion-mode=<yn>
+                        When enabled, pylint would attempt to guess common
+                        misconfiguration and emit user-friendly hints instead
+                        of false-positive error messages. [current: yes]
+    --exit-zero         Always return a 0 (non-error) status code, even if
+                        lint errors are found. This is primarily useful in
+                        continuous integration scripts.
+
+  Commands:
+    --help-msg=<msg-id>
+                        Display a help message for the given message id and
+                        exit. The value may be a comma separated list of
+                        message ids.
+    --list-msgs         Generate pylint's messages.
+    --list-conf-levels  Generate pylint's confidence levels.
+    --full-documentation
+                        Generate pylint's full documentation.
+    --generate-rcfile   Generate a sample configuration file according to the
+                        current configuration. You can put other options
+                        before this one to get them in the generated
+                        configuration.
+
+  Messages control:
+    --confidence=<levels>
+                        Only show warnings with the listed confidence levels.
+                        Leave empty to show all. Valid levels: HIGH,
+                        INFERENCE, INFERENCE_FAILURE, UNDEFINED. [current:
+                        none]
+    -e <msg ids>, --enable=<msg ids>
+                        Enable the message, report, category or checker with
+                        the given id(s). You can either give multiple
+                        identifier separated by comma (,) or put this option
+                        multiple time (only on the command line, not in the
+                        configuration file where it should appear only once).
+                        See also the "--disable" option for examples.
+    -d <msg ids>, --disable=<msg ids>
+                        Disable the message, report, category or checker with
+                        the given id(s). You can either give multiple
+                        identifiers separated by comma (,) or put this option
+                        multiple times (only on the command line, not in the
+                        configuration file where it should appear only once).
+                        You can also use "--disable=all" to disable everything
+                        first and then reenable specific checks. For example,
+                        if you want to run only the similarities checker, you
+                        can use "--disable=all --enable=similarities". If you
+                        want to run only the classes checker, but have no
+                        Warning level messages displayed, use "--disable=all
+                        --enable=classes --disable=W".
+
+  Reports:
+    -f <format>, --output-format=<format>
+                        Set the output format. Available formats are text,
+                        parseable, colorized, json and msvs (visual studio).
+                        You can also give a reporter class, e.g.
+                        mypackage.mymodule.MyReporterClass. [current: text]
+    -r <y_or_n>, --reports=<y_or_n>
+                        Tells whether to display a full report or only the
+                        messages. [current: no]
+    --evaluation=<python_expression>
+                        Python expression which should return a note less than
+                        10 (10 is the highest note). You have access to the
+                        variables errors warning, statement which respectively
+                        contain the number of errors / warnings messages and
+                        the total number of statements analyzed. This is used
+                        by the global evaluation report (RP0004). [current:
+                        10.0 - ((float(5 * error + warning + refactor +
+                        convention) / statement) * 10)]
+    -s <y_or_n>, --score=<y_or_n>
+                        Activate the evaluation score. [current: yes]
+    --msg-template=<template>
+                        Template used to display messages. This is a python
+                        new-style format string used to format the message
+                        information. See doc for all details.
+
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\analyzers_python>pylint crummy_code.py
+************* Module crummy_code
+crummy_code.py:1:0: C0111: Missing module docstring (missing-docstring)
+crummy_code.py:4:0: C0112: Empty class docstring (empty-docstring)
+crummy_code.py:14:24: E0602: Undefined variable 'platform' (undefined-variable)
+crummy_code.py:17:22: E1121: Too many positional arguments for method call (too-many-function-args)
+crummy_code.py:19:4: C0103: Method name "getWeight" doesn't conform to snake_case naming style (invalid-name)
+crummy_code.py:19:4: C0112: Empty method docstring (empty-docstring)
+crummy_code.py:19:4: E0213: Method should have "self" as first argument (no-self-argument)
+crummy_code.py:19:4: R0201: Method could be a function (no-self-use)
+crummy_code.py:4:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+crummy_code.py:1:0: W0611: Unused import sys (unused-import)
+
+------------------------------------
+Your code has been rated at -8.33/10
+
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\analyzers_python>pip install py flakes
+Collecting py
+  Using cached https://files.pythonhosted.org/packages/3e/c7/3da685ef117d42ac8d71af525208759742dd235f8094221fdaafcd3dba8f/py-1.7.0-py2.py3-none-any.whl
+Collecting flakes
+  Could not find a version that satisfies the requirement flakes (from versions: )
+No matching distribution found for flakes
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\analyzers_python>pip install pyflakes
+Collecting pyflakes
+  Downloading https://files.pythonhosted.org/packages/16/3b/b6a508ad148ce1ef50bd7a9a783afbb8d775616fc4ae5e3007c8815a3c85/pyflakes-2.1.0-py2.py3-none-any.whl (62kB)
+    100% |████████████████████████████████| 71kB 848kB/s
+Installing collected packages: pyflakes
+Successfully installed pyflakes-2.1.0
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\analyzers_python>pyflakes.exe crummy_code.py
+crummy_code.py:1: 'sys' imported but unused
+crummy_code.py:15: undefined name 'platform'
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\analyzers_python>pyflakes.exe crummy_code.py
+crummy_code.py:1: 'sys' imported but unused
+crummy_code.py:17: undefined name 'platform'
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\analyzers_python>pylint crummy_code.py
+************* Module crummy_code
+crummy_code.py:7:30: C0303: Trailing whitespace (trailing-whitespace)
+crummy_code.py:8:47: C0303: Trailing whitespace (trailing-whitespace)
+crummy_code.py:1:0: C0111: Missing module docstring (missing-docstring)
+crummy_code.py:3:0: W0105: String statement has no effect (pointless-string-statement)
+crummy_code.py:6:0: W0105: String statement has no effect (pointless-string-statement)
+crummy_code.py:9:-1: W0105: String statement has no effect (pointless-string-statement)
+crummy_code.py:11:0: C0112: Empty class docstring (empty-docstring)
+crummy_code.py:21:24: E0602: Undefined variable 'platform' (undefined-variable)
+crummy_code.py:24:22: E1121: Too many positional arguments for method call (too-many-function-args)
+crummy_code.py:26:4: C0103: Method name "getWeight" doesn't conform to snake_case naming style (invalid-name)
+crummy_code.py:26:4: C0112: Empty method docstring (empty-docstring)
+crummy_code.py:26:4: E0213: Method should have "self" as first argument (no-self-argument)
+crummy_code.py:26:4: R0201: Method could be a function (no-self-use)
+crummy_code.py:11:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+crummy_code.py:34:-1: W0105: String statement has no effect (pointless-string-statement)
+crummy_code.py:1:0: W0611: Unused import sys (unused-import)
+
+--------------------------------------------------------------------
+Your code has been rated at -7.50/10 (previous run: -8.33/10, +0.83)
+
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\analyzers_python>pylint
+Usage:  pylint [options] modules_or_packages
+
+  Check that module(s) satisfy a coding standard (and more !).
+
+    pylint --help
+
+  Display this help message and exit.
+
+    pylint --help-msg <msg-id>[,<msg-id>]
+
+  Display help messages about given message identifiers and exit.
+
+
+Options:
+  --version             show program's version number and exit
+  -h, --help            show this help message and exit
+  --long-help           more verbose help.
+
+  Master:
+    --rcfile=<file>     Specify a configuration file.
+    --init-hook=<code>  Python code to execute, usually for sys.path
+                        manipulation such as pygtk.require().
+    -E, --errors-only   In error mode, checkers without error messages are
+                        disabled and for others, only the ERROR messages are
+                        displayed, and no reports are done by default.
+    --py3k              In Python 3 porting mode, all checkers will be
+                        disabled and only messages emitted by the porting
+                        checker will be displayed.
+    -v, --verbose       In verbose mode, extra non-checker-related info will
+                        be displayed.
+    --ignore=<file>[,<file>...]
+                        Add files or directories to the blacklist. They should
+                        be base names, not paths. [current: CVS]
+    --ignore-patterns=<pattern>[,<pattern>...]
+                        Add files or directories matching the regex patterns
+                        to the blacklist. The regex matches against base
+                        names, not paths. [current: none]
+    --persistent=<y_or_n>
+                        Pickle collected data for later comparisons. [current:
+                        yes]
+    --load-plugins=<modules>
+                        List of plugins (as comma separated values of python
+                        modules names) to load, usually to register additional
+                        checkers. [current: none]
+    -j <n-processes>, --jobs=<n-processes>
+                        Use multiple processes to speed up Pylint. Specifying
+                        0 will auto-detect the number of processors available
+                        to use. [current: 1]
+    --limit-inference-results=<number-of-results>
+                        Control the amount of potential inferred values when
+                        inferring a single object. This can help the
+                        performance when dealing with large functions or
+                        complex, nested conditions.  [current: 100]
+    --extension-pkg-whitelist=<pkg[,pkg]>
+                        A comma-separated list of package or module names from
+                        where C extensions may be loaded. Extensions are
+                        loading into the active Python interpreter and may run
+                        arbitrary code. [current: none]
+    --suggestion-mode=<yn>
+                        When enabled, pylint would attempt to guess common
+                        misconfiguration and emit user-friendly hints instead
+                        of false-positive error messages. [current: yes]
+    --exit-zero         Always return a 0 (non-error) status code, even if
+                        lint errors are found. This is primarily useful in
+                        continuous integration scripts.
+
+  Commands:
+    --help-msg=<msg-id>
+                        Display a help message for the given message id and
+                        exit. The value may be a comma separated list of
+                        message ids.
+    --list-msgs         Generate pylint's messages.
+    --list-conf-levels  Generate pylint's confidence levels.
+    --full-documentation
+                        Generate pylint's full documentation.
+    --generate-rcfile   Generate a sample configuration file according to the
+                        current configuration. You can put other options
+                        before this one to get them in the generated
+                        configuration.
+
+  Messages control:
+    --confidence=<levels>
+                        Only show warnings with the listed confidence levels.
+                        Leave empty to show all. Valid levels: HIGH,
+                        INFERENCE, INFERENCE_FAILURE, UNDEFINED. [current:
+                        none]
+    -e <msg ids>, --enable=<msg ids>
+                        Enable the message, report, category or checker with
+                        the given id(s). You can either give multiple
+                        identifier separated by comma (,) or put this option
+                        multiple time (only on the command line, not in the
+                        configuration file where it should appear only once).
+                        See also the "--disable" option for examples.
+    -d <msg ids>, --disable=<msg ids>
+                        Disable the message, report, category or checker with
+                        the given id(s). You can either give multiple
+                        identifiers separated by comma (,) or put this option
+                        multiple times (only on the command line, not in the
+                        configuration file where it should appear only once).
+                        You can also use "--disable=all" to disable everything
+                        first and then reenable specific checks. For example,
+                        if you want to run only the similarities checker, you
+                        can use "--disable=all --enable=similarities". If you
+                        want to run only the classes checker, but have no
+                        Warning level messages displayed, use "--disable=all
+                        --enable=classes --disable=W".
+
+  Reports:
+    -f <format>, --output-format=<format>
+                        Set the output format. Available formats are text,
+                        parseable, colorized, json and msvs (visual studio).
+                        You can also give a reporter class, e.g.
+                        mypackage.mymodule.MyReporterClass. [current: text]
+    -r <y_or_n>, --reports=<y_or_n>
+                        Tells whether to display a full report or only the
+                        messages. [current: no]
+    --evaluation=<python_expression>
+                        Python expression which should return a note less than
+                        10 (10 is the highest note). You have access to the
+                        variables errors warning, statement which respectively
+                        contain the number of errors / warnings messages and
+                        the total number of statements analyzed. This is used
+                        by the global evaluation report (RP0004). [current:
+                        10.0 - ((float(5 * error + warning + refactor +
+                        convention) / statement) * 10)]
+    -s <y_or_n>, --score=<y_or_n>
+                        Activate the evaluation score. [current: yes]
+    --msg-template=<template>
+                        Template used to display messages. This is a python
+                        new-style format string used to format the message
+                        information. See doc for all details.
+
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\analyzers_python>pip install pycodestyle
+Collecting pycodestyle
+  Downloading https://files.pythonhosted.org/packages/0e/0c/04a353e104d2f324f8ee5f4b32012618c1c86dd79e52a433b64fceed511b/pycodestyle-2.5.0-py2.py3-none-any.whl (51kB)
+    100% |████████████████████████████████| 51kB 641kB/s
+Installing collected packages: pycodestyle
+Successfully installed pycodestyle-2.5.0
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\analyzers_python>pycodestyle example.py
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\analyzers_python>py -m pycodestyle example.py
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\analyzers_python>python -m pycodestyle example.py
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\analyzers_python>python -m pycodestyle example.py
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\analyzers_python>pylint example.py
+************* Module example
+example.py:1:0: C0111: Missing module docstring (missing-docstring)
+example.py:2:0: E0401: Unable to import 'notexistmodule' (import-error)
+example.py:5:0: C0103: Function name "Function" doesn't conform to snake_case naming style (invalid-name)
+example.py:5:0: C0111: Missing function docstring (missing-docstring)
+example.py:5:18: W0613: Unused argument 'num_two' (unused-argument)
+example.py:9:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+example.py:17:0: C0111: Missing function docstring (missing-docstring)
+example.py:22:4: C0103: Constant name "my_class" doesn't conform to UPPER_CASE naming style (invalid-name)
+example.py:23:0: E1101: Instance of 'MyClass' has no 'out' member (no-member)
+example.py:1:0: W0611: Unused import os (unused-import)
+
+------------------------------------
+Your code has been rated at -3.85/10
+
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\analyzers_python>pycodestyle example.py
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\analyzers_python>python pycodestyle example.py
+python: can't open file 'pycodestyle': [Errno 2] No such file or directory
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\analyzers_python>python3 -m pycodestyle example.py
+'python3' is not recognized as an internal or external command,
+operable program or batch file.
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\analyzers_python>python -m pycodestyle example.py
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\analyzers_python>pip install pydocstyle
+Collecting pydocstyle
+  Downloading https://files.pythonhosted.org/packages/6e/3f/9207e1af3fb23c71a2a17a5d82d4c68f4dd6b3429b58514c74b95f6e0784/pydocstyle-3.0.0-py3-none-any.whl
+Requirement already satisfied: six in c:\users\vladyslav.hnatchenko\pycharmprojects\analyzers_python\venv\lib\site-packages (from pydocstyle) (1.12.0)
+Collecting snowballstemmer (from pydocstyle)
+  Downloading https://files.pythonhosted.org/packages/d4/6c/8a935e2c7b54a37714656d753e4187ee0631988184ed50c0cf6476858566/snowballstemmer-1.2.1-py2.py3-none-any.whl (64kB)
+    100% |████████████████████████████████| 71kB 1.5MB/s
+Installing collected packages: snowballstemmer, pydocstyle
+Successfully installed pydocstyle-3.0.0 snowballstemmer-1.2.1
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\analyzers_python>python -m pydocstyle example.py
+example.py:1 at module level:
+        D100: Missing docstring in public module
+example.py:5 in public function `Function`:
+        D103: Missing docstring in public function
+example.py:10 in public class `MyClass`:
+        D210: No whitespaces allowed surrounding docstring text
+example.py:10 in public class `MyClass`:
+        D400: First line should end with a period (not 's')
+example.py:17 in public function `out`:
+        D103: Missing docstring in public function
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\analyzers_python>pylint example.py
+************* Module example
+example.py:1:0: C0111: Missing module docstring (missing-docstring)
+example.py:2:0: E0401: Unable to import 'notexistmodule' (import-error)
+example.py:5:0: C0103: Function name "Function" doesn't conform to snake_case naming style (invalid-name)
+example.py:5:0: C0111: Missing function docstring (missing-docstring)
+example.py:5:18: W0613: Unused argument 'num_two' (unused-argument)
+example.py:9:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+example.py:17:0: C0111: Missing function docstring (missing-docstring)
+example.py:22:4: C0103: Constant name "my_class" doesn't conform to UPPER_CASE naming style (invalid-name)
+example.py:23:0: E1101: Instance of 'MyClass' has no 'out' member (no-member)
+example.py:1:0: W0611: Unused import os (unused-import)
+
+--------------------------------------------------------------------
+Your code has been rated at -3.85/10 (previous run: -3.85/10, +0.00)
+
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\analyzers_python>pylint --reports=y text example.py
+************* Module text
+c:\users\vladyslav.hnatchenko\pycharmprojects\analyzers_python\venv\lib\site-packages\pylint\reporters\text.py:80:22: W0212: Access to a protected member _splitstrip of a client class (protected-access)
+************* Module example
+example.py:1:0: C0111: Missing module docstring (missing-docstring)
+example.py:2:0: E0401: Unable to import 'notexistmodule' (import-error)
+example.py:5:0: C0103: Function name "Function" doesn't conform to snake_case naming style (invalid-name)
+example.py:5:0: C0111: Missing function docstring (missing-docstring)
+example.py:5:18: W0613: Unused argument 'num_two' (unused-argument)
+example.py:9:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+example.py:17:0: C0111: Missing function docstring (missing-docstring)
+example.py:22:4: C0103: Constant name "my_class" doesn't conform to UPPER_CASE naming style (invalid-name)
+example.py:23:0: E1101: Instance of 'MyClass' has no 'out' member (no-member)
+example.py:1:0: W0611: Unused import os (unused-import)
+
+
+Report
+======
+112 statements analysed.
+
+Statistics by type
+------------------
+
++---------+-------+-----------+-----------+------------+---------+
+|type     |number |old number |difference |%documented |%badname |
++=========+=======+===========+===========+============+=========+
+|module   |2      |1          |+1.00      |50.00       |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|class    |5      |1          |+4.00      |100.00      |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|method   |9      |0          |+9.00      |100.00      |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|function |6      |3          |+3.00      |66.67       |16.67    |
++---------+-------+-----------+-----------+------------+---------+
+
+
+
+External dependencies
+---------------------
+::
+
+    colorama (text)
+    pylint
+      \-interfaces (text)
+      \-reporters (text)
+      | \-ureports
+      |   \-text_writer (text)
+      \-utils (text)
+
+
+
+Raw metrics
+-----------
+
++----------+-------+------+---------+-----------+
+|type      |number |%     |previous |difference |
++==========+=======+======+=========+===========+
+|code      |129    |46.40 |NC       |NC         |
++----------+-------+------+---------+-----------+
+|docstring |86     |30.94 |NC       |NC         |
++----------+-------+------+---------+-----------+
+|comment   |16     |5.76  |NC       |NC         |
++----------+-------+------+---------+-----------+
+|empty     |47     |16.91 |NC       |NC         |
++----------+-------+------+---------+-----------+
+
+
+
+Duplication
+-----------
+
++-------------------------+------+---------+-----------+
+|                         |now   |previous |difference |
++=========================+======+=========+===========+
+|nb duplicated lines      |0     |0        |=          |
++-------------------------+------+---------+-----------+
+|percent duplicated lines |0.000 |0.000    |=          |
++-------------------------+------+---------+-----------+
+
+
+
+Messages by category
+--------------------
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |5      |5        |=          |
++-----------+-------+---------+-----------+
+|refactor   |1      |1        |=          |
++-----------+-------+---------+-----------+
+|warning    |3      |2        |+1.00      |
++-----------+-------+---------+-----------+
+|error      |2      |2        |=          |
++-----------+-------+---------+-----------+
+
+
+
+% errors / warnings by module
+-----------------------------
+
++--------+-------+--------+---------+-----------+
+|module  |error  |warning |refactor |convention |
++========+=======+========+=========+===========+
+|example |100.00 |66.67   |100.00   |100.00     |
++--------+-------+--------+---------+-----------+
+|text    |0.00   |33.33   |0.00     |0.00       |
++--------+-------+--------+---------+-----------+
+
+
+
+Messages
+--------
+
++-----------------------+------------+
+|message id             |occurrences |
++=======================+============+
+|missing-docstring      |3           |
++-----------------------+------------+
+|invalid-name           |2           |
++-----------------------+------------+
+|unused-import          |1           |
++-----------------------+------------+
+|unused-argument        |1           |
++-----------------------+------------+
+|too-few-public-methods |1           |
++-----------------------+------------+
+|protected-access       |1           |
++-----------------------+------------+
+|no-member              |1           |
++-----------------------+------------+
+|import-error           |1           |
++-----------------------+------------+
+
+
+
+
+--------------------------------------------------------------------
+Your code has been rated at 8.30/10 (previous run: -3.85/10, +12.15)
+
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\analyzers_python>pylint example.py
+************* Module example
+example.py:1:0: C0111: Missing module docstring (missing-docstring)
+example.py:2:0: E0401: Unable to import 'notexistmodule' (import-error)
+example.py:5:0: C0103: Function name "Function" doesn't conform to snake_case naming style (invalid-name)
+example.py:5:0: C0111: Missing function docstring (missing-docstring)
+example.py:5:18: W0613: Unused argument 'num_two' (unused-argument)
+example.py:9:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+example.py:17:0: C0111: Missing function docstring (missing-docstring)
+example.py:22:4: C0103: Constant name "my_class" doesn't conform to UPPER_CASE naming style (invalid-name)
+example.py:23:0: E1101: Instance of 'MyClass' has no 'out' member (no-member)
+example.py:1:0: W0611: Unused import os (unused-import)
+
+--------------------------------------------------------------------
+Your code has been rated at -3.85/10 (previous run: 8.30/10, -12.15)
+
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\analyzers_python>pip install flake8
+Collecting flake8
+  Downloading https://files.pythonhosted.org/packages/5a/d8/1377549a9b77ad6d3c8161c741e2186bc698150f639fe08123bfe53e7a27/flake8-3.7.5-py2.py3-none-any.whl (68kB)
+    100% |████████████████████████████████| 71kB 895kB/s
+Requirement already satisfied: pycodestyle<2.6.0,>=2.5.0 in c:\users\vladyslav.hnatchenko\pycharmprojects\analyzers_python\venv\lib\site-packages (from flake8) (2.5.0)
+Requirement already satisfied: mccabe<0.7.0,>=0.6.0 in c:\users\vladyslav.hnatchenko\pycharmprojects\analyzers_python\venv\lib\site-packages (from flake8) (0.6.1)
+Collecting entrypoints<0.4.0,>=0.3.0 (from flake8)
+  Downloading https://files.pythonhosted.org/packages/ac/c6/44694103f8c221443ee6b0041f69e2740d89a25641e62fb4f2ee568f2f9c/entrypoints-0.3-py2.py3-none-any.whl
+Requirement already satisfied: pyflakes<2.2.0,>=2.1.0 in c:\users\vladyslav.hnatchenko\pycharmprojects\analyzers_python\venv\lib\site-packages (from flake8) (2.1.0)
+Installing collected packages: entrypoints, flake8
+Successfully installed entrypoints-0.3 flake8-3.7.5
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\analyzers_python>python -m flake8 --statistics --count example.py
+example.py:1:1: F401 'os' imported but unused
+1     F401 'os' imported but unused
+1
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\analyzers_python>python3.6 -m flake8 --statistics --count example.py
+'python3.6' is not recognized as an internal or external command,
+operable program or batch file.
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\analyzers_python>flake8 --statistics --count example.py
+example.py:1:1: F401 'os' imported but unused
+1     F401 'os' imported but unused
+1
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\analyzers_python>cd ..
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects>flake8 analyzers_python
+... stopped while processing files
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects>
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects>cd analyzers_python
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\analyzers_python>flake8 example.py
+example.py:1:1: F401 'os' imported but unused
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\analyzers_python>flake8 test_2.py
+test_2.py:1:1: F401 'sys' imported but unused
+test_2.py:14:25: F821 undefined name 'platform'
+test_2.py:21:26: W292 no newline at end of file
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\analyzers_python>

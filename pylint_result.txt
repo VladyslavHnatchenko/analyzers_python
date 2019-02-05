@@ -1,0 +1,142 @@
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\analyzers_python>pylint --reports=y text example.py
+************* Module text
+c:\users\vladyslav.hnatchenko\pycharmprojects\analyzers_python\venv\lib\site-packages\pylint\reporters\text.py:80:22: W0212: Access to a protected member _splitstrip of a client class (protected-access)
+************* Module example
+example.py:1:0: C0111: Missing module docstring (missing-docstring)
+example.py:2:0: E0401: Unable to import 'notexistmodule' (import-error)
+example.py:5:0: C0103: Function name "Function" doesn't conform to snake_case naming style (invalid-name)
+example.py:5:0: C0111: Missing function docstring (missing-docstring)
+example.py:5:18: W0613: Unused argument 'num_two' (unused-argument)
+example.py:9:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+example.py:17:0: C0111: Missing function docstring (missing-docstring)
+example.py:22:4: C0103: Constant name "my_class" doesn't conform to UPPER_CASE naming style (invalid-name)
+example.py:23:0: E1101: Instance of 'MyClass' has no 'out' member (no-member)
+example.py:1:0: W0611: Unused import os (unused-import)
+
+
+Report
+======
+112 statements analysed.
+
+Statistics by type
+------------------
+
++---------+-------+-----------+-----------+------------+---------+
+|type     |number |old number |difference |%documented |%badname |
++=========+=======+===========+===========+============+=========+
+|module   |2      |1          |+1.00      |50.00       |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|class    |5      |1          |+4.00      |100.00      |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|method   |9      |0          |+9.00      |100.00      |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|function |6      |3          |+3.00      |66.67       |16.67    |
++---------+-------+-----------+-----------+------------+---------+
+
+
+
+External dependencies
+---------------------
+::
+
+    colorama (text)
+    pylint
+      \-interfaces (text)
+      \-reporters (text)
+      | \-ureports
+      |   \-text_writer (text)
+      \-utils (text)
+
+
+
+Raw metrics
+-----------
+
++----------+-------+------+---------+-----------+
+|type      |number |%     |previous |difference |
++==========+=======+======+=========+===========+
+|code      |129    |46.40 |NC       |NC         |
++----------+-------+------+---------+-----------+
+|docstring |86     |30.94 |NC       |NC         |
++----------+-------+------+---------+-----------+
+|comment   |16     |5.76  |NC       |NC         |
++----------+-------+------+---------+-----------+
+|empty     |47     |16.91 |NC       |NC         |
++----------+-------+------+---------+-----------+
+
+
+
+Duplication
+-----------
+
++-------------------------+------+---------+-----------+
+|                         |now   |previous |difference |
++=========================+======+=========+===========+
+|nb duplicated lines      |0     |0        |=          |
++-------------------------+------+---------+-----------+
+|percent duplicated lines |0.000 |0.000    |=          |
++-------------------------+------+---------+-----------+
+
+
+
+Messages by category
+--------------------
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |5      |5        |=          |
++-----------+-------+---------+-----------+
+|refactor   |1      |1        |=          |
++-----------+-------+---------+-----------+
+|warning    |3      |2        |+1.00      |
++-----------+-------+---------+-----------+
+|error      |2      |2        |=          |
++-----------+-------+---------+-----------+
+
+
+
+% errors / warnings by module
+-----------------------------
+
++--------+-------+--------+---------+-----------+
+|module  |error  |warning |refactor |convention |
++========+=======+========+=========+===========+
+|example |100.00 |66.67   |100.00   |100.00     |
++--------+-------+--------+---------+-----------+
+|text    |0.00   |33.33   |0.00     |0.00       |
++--------+-------+--------+---------+-----------+
+
+
+
+Messages
+--------
+
++-----------------------+------------+
+|message id             |occurrences |
++=======================+============+
+|missing-docstring      |3           |
++-----------------------+------------+
+|invalid-name           |2           |
++-----------------------+------------+
+|unused-import          |1           |
++-----------------------+------------+
+|unused-argument        |1           |
++-----------------------+------------+
+|too-few-public-methods |1           |
++-----------------------+------------+
+|protected-access       |1           |
++-----------------------+------------+
+|no-member              |1           |
++-----------------------+------------+
+|import-error           |1           |
++-----------------------+------------+
+
+
+
+
+--------------------------------------------------------------------
+Your code has been rated at 8.30/10 (previous run: -3.85/10, +12.15)
+
+
+(venv) C:\Users\vladyslav.hnatchenko\PycharmProjects\analyzers_python>
