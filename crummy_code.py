@@ -54,3 +54,5 @@ class CarClass:
     R – рефакторинг (refactor)
     W – предупреждение (warning)
     E – ошибка (error)"""
+
+print("hello")
